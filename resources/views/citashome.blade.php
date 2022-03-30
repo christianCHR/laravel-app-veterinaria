@@ -8,8 +8,10 @@
 </head>
 <body>
     <h1>{{$mensaje}}</h1>
+    
     @foreach ($citas as $cita)
-    <p>Cita {{ $cita->descripcion }} fecha {{$cita->fecha}}</p>
-@endforeach
+        <p>Cita {{ $cita->descripcion }} fecha {{$cita->fecha}}</p>
+    @endforeach
+    
 </body>
 </html>
